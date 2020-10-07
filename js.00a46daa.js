@@ -19332,6 +19332,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var parentIzq = document.querySelector(".numerosIzq");
 var parentDer = document.querySelector(".numerosDer");
+var clickMusic = document.createElement("audio");
+var musicWin = document.createElement("audio");
+musicWin.src = "http://commondatastorage.googleapis.com/codeskulptor-assets/week7-brrring.m4a";
+clickMusic.src = "http://codeskulptor-demos.commondatastorage.googleapis.com/GalaxyInvaders/bonus.wav";
 var numeroCentro = document.querySelector(".numeroAleatorio");
 var aciertosUser = 0;
 var aciertosCPU = 0;
@@ -19362,6 +19366,8 @@ function crearNumeros(carton, parent) {
 }
 
 function generarNumerosCentro() {
+  clickMusic.play();
+
   var numeroRandom = _lodash.default.sampleSize(rangoNumerosGenerados);
 
   _lodash.default.pull(rangoNumerosGenerados, parseInt(numeroRandom));
@@ -19375,9 +19381,11 @@ function generarNumerosCentro() {
   if (aciertosCPU == 15) {
     alert("¡Gana la cpu!");
     boton.disabled = true;
+    musicWin.play();
   } else if (aciertosUser == 15) {
     alert("¡Ganaste!");
     boton.disabled = true;
+    musicWin.play();
   }
 }
 
@@ -19421,7 +19429,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54207" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54627" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
