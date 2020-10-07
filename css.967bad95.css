@@ -1,0 +1,77 @@
+body {
+  background-color: DodgerBlue;
+  margin: 0;
+}
+.contenedor {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.contenedor > div {
+  width: 400px;
+  height: 400px;
+  border: 0.1em solid #000000;
+  margin: 7px;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #000000;
+  text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+  background-color: #faa21d;
+  font-size: 30px;
+  text-align: center;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.contenedor > div > span {
+  position: relative;
+  top: 0px;
+  color: black;
+}
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.numeroSinTachar {
+  margin: 20px 10px;
+  width: 50px;
+  height: 50px;
+  background: whitesmoke;
+  text-align: center;
+}
+.numeroTachado {
+  background: red;
+  text-decoration: line-through;
+}
+
+.numeroAleatorio {
+  text-align: center;
+  margin: auto;
+  font-size: 5em;
+  margin-top: 20px;
+  width: 200px;
+  height: 200px;
+  background-color: gray;
+  color: white;
+  border: 10px solid #000000;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+}
+
+.boton {
+  position: relative;
+  top: 20px;
+  width: 202px;
+  height: 50px;
+}
+
+
+/*# sourceMappingURL=/bingoJS/css.967bad95.css.map */
